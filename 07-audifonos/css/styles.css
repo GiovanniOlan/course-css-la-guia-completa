@@ -154,8 +154,8 @@ img {
     margin: 0
 }
 
-@media (min-width: 768px){
-    .icon{
+@media (min-width: 768px) {
+    .icon {
         margin-bottom: 0;
     }
 }
@@ -169,4 +169,71 @@ img {
     color: var(--primary);
     text-transform: uppercase;
     margin-top: calc(var(--separation) / 2);
+}
+
+/* ABOUT TECH */
+.about-tech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primary) 50%), url("../img/imagen-mujer.jpg");
+    background-position: right;
+    background-repeat: repeat, no-repeat;
+    background-size: 100%, 120rem;
+}
+
+@media (min-width: 768px) {
+    .about-tech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primary) 50%), url("../img/imagen-mujer.jpg");
+    }
+}
+
+@media (min-width: 1600px) {
+    .about-tech {
+        background-size: 100%, 210rem;
+    }
+}
+
+.about-tech-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 40rem);
+    row-gap: var(--separation);
+}
+
+@media (min-width: 768px) {
+    .about-tech-grid {
+        grid-template-rows: unset;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        row-gap: unset;
+        padding: calc(var(--separation) * 2) 0;
+    }
+}
+
+.about-tech-text {
+    grid-row: 2/3;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: var(--separation);
+}
+
+@media (min-width: 768px) {
+    .about-tech-text {
+        grid-row: unset;
+        padding-bottom: 0;
+    }
+}
+
+.about-tech-text h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.about-tech-text h2 span {
+    font-weight: 900;
+}
+
+.about-tech-text p {
+    font-size: 2rem;
+    line-height: 2;
 }
