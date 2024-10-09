@@ -129,6 +129,19 @@ img {
             .number-phone {
                 color: var(--white);
                 margin-bottom: 1rem;
+                display: flex;
+                justify-content: center;
+            }
+
+            .number-phone::before{
+                content: "";
+                background-image: url("../img/telefono.png");
+                width: 4rem;
+                height: 4rem;
+                display: block;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin-right: 1rem;
             }
 
             .navbar {
@@ -153,6 +166,11 @@ img {
                     @media (min-width: 768px) {
                         padding: 1rem 2rem;
                     }
+                }
+
+                & a:hover {
+                    background-color: rgb(255 255 255 / .5);
+                    color: var(--black);
                 }
 
                 @media (min-width: 768px) {
