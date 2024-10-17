@@ -179,6 +179,7 @@ img {
     box-shadow: 0 0 10px 10px rgb(0 0 0 / .1);
     padding: 1rem 4rem;
     transition: transform 300ms;
+    background-color: var(--white);
 
     &:hover {
         transform: scale(1.1);
@@ -195,4 +196,53 @@ img {
 .cardList__text {
     font-size: 2rem;
     margin: 0;
+}
+
+/* Security */
+
+.security {
+    margin: 10rem 0;
+    background-color: var(--primary);
+    padding: 20rem 0;
+    position: relative;
+    overflow: hidden;
+
+    &:before, &:after {
+        background-color: var(--white);
+        content: '';
+        height: 20rem;
+        width: 130%;
+        position: absolute;
+    }
+
+    &:before {
+        top: -50px;
+        left: 0;
+        rotate: 3deg;
+    }
+
+    &:after {
+        bottom: -50px;
+        left: 0;
+        rotate: -3deg;
+    }
+}
+
+.security__heading {
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+.security__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 5rem;
+    }
 }
