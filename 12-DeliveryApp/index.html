@@ -26,5 +26,45 @@
         >
       </nav>
     </header>
+
+    <section class="form container">
+      <div class="form__grid">
+        <div class="form__content">
+          <h2 class="form__title">
+            Encuentra y Pide comida de tu restaurante favorito
+          </h2>
+          <form class="form__search">
+            <div class="form__field">
+              <label class="form__label" for="restaurant_name"
+                >Restaurant</label
+              >
+              <input
+                class="form__input"
+                type="text"
+                id="restaurant_name"
+                placeholder="Tacos México"
+              />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="platillo_name">Platillo</label>
+              <input
+                class="form__input"
+                type="text"
+                id="platillo_name"
+                name="platillo_name"
+                placeholder="Pizza, Enzalada, Hamburguesa"
+              />
+            </div>
+            <input class="form__submit" type="submit" value="Buscar" />
+          </form>
+        </div>
+        <div class="form__image">
+          <img
+            src="./build/img/dibujo_repartidor.svg"
+            alt="Imagen repartidor"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
