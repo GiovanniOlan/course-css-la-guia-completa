@@ -48,3 +48,10 @@ h2 {
 h3 {
   font-size: 3.2rem;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: v.$separacion 0 0 0;
+}

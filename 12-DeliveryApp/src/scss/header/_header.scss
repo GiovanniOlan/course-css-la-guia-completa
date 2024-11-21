@@ -4,7 +4,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  padding: v.$separacion 0;
+  // padding: v.$separacion 0;
   align-items: center;
   @include m.desktop {
     flex-direction: row;
