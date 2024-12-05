@@ -1,0 +1,57 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.testimonial {
+  background-color: v.$secundario;
+  padding: 2rem;
+  border-radius: 2rem;
+
+  // Separation between child elements
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  //-->
+
+  &__header {
+    display: flex;
+    // justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &__imgProfile {
+    flex-basis: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__autor {
+    color: v.$blanco;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__comment {
+    font-size: 2rem;
+    color: v.$blanco;
+    margin: 0;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 3.5rem;
+
+    &::before {
+      content: '"';
+      font-size: 10rem;
+      position: absolute;
+      opacity: 0.2;
+      top: -34px;
+      left: 5px;
+    }
+  }
+}
