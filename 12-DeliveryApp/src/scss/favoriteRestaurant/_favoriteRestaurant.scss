@@ -12,9 +12,14 @@
     text-align: center;
     color: v.$secundario;
   }
+
   &__list {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    @include m.tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
