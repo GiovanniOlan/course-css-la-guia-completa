@@ -1,0 +1,20 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.favoriteRestaurant {
+  background-color: v.$grisClaro;
+
+  &__container {
+    padding: 5rem 0;
+  }
+
+  &__title {
+    text-align: center;
+    color: v.$secundario;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
